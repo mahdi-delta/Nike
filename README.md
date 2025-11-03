@@ -1,119 +1,114 @@
-# Nike
+# Nike — React + Vite + Tailwind demo
 
-A lightweight JavaScript-based front-end project (HTML/CSS/JS) that demonstrates UI components and interactions inspired by Nike-style layouts and features. Designed for learning, experimentation, and small demos.
+An example front-end project built with React and Vite, styled using TailwindCSS with a few custom utilities. The repository demonstrates common UI sections for an e-commerce-like layout (navigation, hero, product cards, reviews, and footer) and provides a small, easy-to-extend foundation for experimentation and learning.
 
-[![Language: JavaScript](https://img.shields.io/badge/language-JavaScript-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+This README is written in English and covers setup, available scripts, the project structure, and a few styling notes relevant to this codebase.
 
-Table of Contents
-- [About](#about)
-- [Demo](#demo)
-- [Features](#features)
-- [Tech stack](#tech-stack)
-- [Getting started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Run locally](#run-locally)
-- [Project structure](#project-structure)
-- [Usage](#usage)
-- [Styling & assets](#styling--assets)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## Key features
 
-About
------
-This repository contains a JavaScript-first front-end project that showcases UI components (cards, navigation, product grid, simple interactions) and styling patterns similar to an e-commerce/catalog layout. It is intended for learning, prototyping, and referencing small front-end techniques without a heavy framework.
+-    React + Vite for a fast development experience
+-    TailwindCSS with a small set of custom utilities defined in 
+`src/index.css`
+-    Modular component structure: components live in `src/Components` and page sections in `src/sections`
 
-Demo
-----
-If you host the project (GitHub Pages or any static server), open index.html in a browser to view the UI. Example:
-- Open: ./index.html
-- Or serve with a static server (see Run locally).
+---
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=react,tailwind,js,html,css,vite)
 
-Features
---------
-- Responsive layout with CSS for product/listing style pages
-- Vanilla JavaScript interactions (cart toggles, basic filtering, animations)
-- Modular structure suitable for small enhancements and experiments
-- Minimal dependencies — mostly plain JS/CSS/HTML
+## Tech stack
 
-Tech stack
-----------
-- JavaScript (~93%)
-- CSS (~6%)
-- HTML (~1%)
+-    React 19
+-    Vite
+-    TailwindCSS
+-    PostCSS / Autoprefixer
 
-Getting started
----------------
-Prerequisites
-- Node.js and npm installed (optional, only needed for local dev server or tooling)
-- Modern browser for testing (Chrome/Firefox/Edge/Safari)
+## Prerequisites
 
-Install
-- Clone the repository:
-  git clone https://github.com/mahdi-delta/Nike.git
-  cd Nike
+-    Node.js (modern LTS) and npm
 
-Run locally
-- Option A — Open directly:
-  - Open index.html in your browser.
+## Install & run
 
-- Option B — Serve with a simple static server (recommended during development):
-  - If you have npm:
-    npm install -g http-server
-    http-server -c-1
-  - Or use Python (if available):
-    python3 -m http.server 8000
-  - Then open http://localhost:8080 (http-server) or http://localhost:8000 (python).
+1. Install dependencies:
 
-Project structure
------------------
-- index.html — Main entry page / demo
-- /css — Stylesheets (global & components)
-- /js — JavaScript modules and main scripts
-- /assets — Images and static assets
-- README.md — This file
-- LICENSE — Project license (MIT recommended)
+```powershell
+npm install
+```
 
-Usage
------
-- Inspect index.html to see how components are wired.
-- JS entry point (e.g., js/main.js) initializes UI interactions.
-- To add new product cards or components, update HTML templates in index.html or create new partials under a components folder and import them in the JS.
+2. Start development server (hot-reload):
 
-Styling & assets
-----------------
-- CSS is plain CSS; you can migrate to SCSS or a CSS framework if needed.
-- Images and icons are stored in /assets — replace them with your own to customize the look.
+```powershell
+npm run dev
+```
 
-Testing
--------
-- There are no automated tests by default. For quick manual checks:
-  - Verify layout at different widths (mobile/tablet/desktop)
-  - Test interactive features (buttons, filters, cart toggle)
-- To add unit/visual tests, consider adding a test runner (Jest, Playwright, Cypress) and update package.json scripts.
+3. Build for production:
 
-Contributing
-------------
-Contributions are welcome. Suggested workflow:
-1. Fork the repo.
-2. Create a feature branch: git checkout -b feature/your-feature
-3. Make changes and commit: git commit -m "Add: short description"
-4. Push and open a Pull Request.
+```powershell
+npm run build
+```
 
-Please keep changes focused and provide a screenshot if you modify UI.
+4. Preview production build locally:
 
-License
--------
-This project is provided under the MIT License — see LICENSE file for details.
+```powershell
+npm run preview
+```
 
-Contact
--------
-Maintainer: mahdi-delta  
-GitHub: https://github.com/mahdi-delta
+5. Run linter (eslint):
 
-Notes
------
-- This README was written to fit a small front-end repository composed mainly of JavaScript, CSS, and HTML. If you'd like, I can customize sections with concrete commands, npm scripts, or examples based on actual files in the repo (for example, exact entry script names, build steps, or screenshots). If you want that, tell me which parts of the repository I should inspect or share key filenames.
+```powershell
+npm run lint
+```
+
+The available scripts come from `package.json`: `dev`, `build`, `preview`, `lint`.
+
+## Project structure (important files)
+
+-    `index.html` — app entry
+-    `src/main.jsx` — React entry
+-    `src/App.jsx` — app layout & sections
+-    `src/index.css` — Tailwind imports and custom utilities (e.g. `padding-x`, `max-container`)
+-    `src/Components/` — reusable components (Nav, Button, ShoeCard, ...)
+-    `src/sections/` — page sections (Hero, Footer, PopularProducts, ...)
+-    `src/assets/` — images and icons
+-    `tailwind.config.js` — Tailwind configuration (screens, colors, background images, etc.)
+
+Example tree (short):
+
+```
+src/
+  App.jsx
+  main.jsx
+  index.css
+  Components/
+    Nav.jsx
+    Button.jsx
+    ShoeCard.jsx
+  sections/
+    Hero.jsx
+    Footer.jsx
+    PopularProducts.jsx
+  assets/
+    images/
+    icons/
+```
+
+## Styling & layout notes
+
+-    Tailwind utilities are extended in `src/index.css` under `@layer utilities`. Some custom utilities you will see are `padding`, `padding-x`, `padding-t`, `padding-b`, and `max-container` (a centered max-width container).
+
+-    Common footer layout pattern used here: a full-bleed background (e.g. `bg-black`) on the outer `section`, and a centered content wrapper inside (`max-container`) that limits content width. If you notice horizontal gaps on the footer background, typical causes are:
+
+     1.   The outer wrapper has a utility like `padding-x` that adds horizontal padding to the background.
+     2.   The inner footer component uses `max-container` which centers and constrains content (this is intentional in most designs).
+
+-    In this repo I removed `padding-x` from the footer wrapper in `src/App.jsx` so the footer background spans edge-to-edge while the footer content remains centered inside the `Footer` component. If you want the footer content itself to also reach the edges, remove or change `max-container` in `src/sections/Footer.jsx`.
+
+-    Small gotcha: there are a few typos like `xl:paddin-1` (missing an "g" in `padding`) in class names. These won't match Tailwind utilities and should be corrected where intended.
+
+## Quick checks & troubleshooting
+
+-    If CSS changes aren't visible:
+
+     -    Ensure `src/index.css` includes `@tailwind base; @tailwind components; @tailwind utilities;` (it does in this project).
+     -    Restart the Vite dev server after adding new custom utilities.
+
+-    If an asset (image/icon) doesn't load, verify the path under `src/assets` and how it's imported in components.
+
