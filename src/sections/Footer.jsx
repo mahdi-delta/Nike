@@ -5,7 +5,7 @@ import { footerLinks, socialMedia } from "../Constants";
 const Footer = () => {
      return (
           <footer className="max-container">
-               <div className="felx justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+               <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
                     <div className="flex flex-col items-start">
                          <a href="/">
                               <img src={footerLogo} alt="footer image" w={150} height={46} />
