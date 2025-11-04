@@ -4,10 +4,16 @@ An example front-end project built with React and Vite, styled using TailwindCSS
 
 This README is written in English and covers setup, available scripts, the project structure, and a few styling notes relevant to this codebase.
 
+## Preview
+
+![My Skills](./src/assets/readmeImages/Nike1.png)
+![My Skills](./src/assets/readmeImages/Nike2.png)
+![My Skills](./src/assets/readmeImages/Nike3.png)
+
 ## Key features
 
 -    React + Vite for a fast development experience
--    TailwindCSS with a small set of custom utilities defined in 
+-    TailwindCSS with a small set of custom utilities defined in
 `src/index.css`
 -    Modular component structure: components live in `src/Components` and page sections in `src/sections`
 
