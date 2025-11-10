@@ -1,5 +1,7 @@
 import "./App.css";
 import Nav from "./Components/Nav";
+import ScrollProgress from "./Components/ScrollProgress";
+import BackToTop from "./Components/BackToTop";
 import Hero from "./sections/Hero";
 import PopularProducts from "./sections/PopularProducts";
 import SuperQuality from "./sections/SuperQuality";
@@ -11,6 +13,8 @@ import Footer from "./sections/Footer";
 
 const App = () => (
      <main className="relative text-left">
+          <ScrollProgress />
+          <BackToTop />
           <Nav />
           <section className="xl:paddin-1 wide:padding-r padding-b">
                <Hero />

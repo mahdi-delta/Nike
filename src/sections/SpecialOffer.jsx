@@ -11,10 +11,10 @@ const SpecialOffer = () => {
                          width={773}
                          height={687}
                          alt="image"
-                         className="object-contain w-full "
+                         className="object-contain w-full transition-all duration-700 hover:scale-105 hover:-rotate-2"
                     />
                </div>
-               <div className="flex flex-1 flex-col ">
+               <div className="flex flex-1 flex-col">
                     <h2 className="mt-10 font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
                          <span className="text-coral-red">Special </span>Offer
                     </h2>

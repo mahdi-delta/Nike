@@ -8,7 +8,7 @@ const SuperQuality = () => {
                id="about-us"
                className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
           >
-               <div className="flex flex-1 flex-col ">
+               <div className="flex flex-1 flex-col">
                     <h2 className="mt-10 font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
                          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
                               The New Arrival
@@ -32,8 +32,13 @@ const SuperQuality = () => {
                     </div>
                </div>
                <div className="flex-1 flex justify-center items-center">
-                  <img src={shoe8} alt="shoe8" width={570} height={522}
-                  className="object-contain"/>
+                    <img
+                         src={shoe8}
+                         alt="shoe8"
+                         width={570}
+                         height={522}
+                         className="object-contain transition-all duration-500 hover:scale-110 hover:rotate-3"
+                    />
                </div>
           </section>
      );
