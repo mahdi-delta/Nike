@@ -45,24 +45,6 @@ npm install
 npm run dev
 ```
 
-3. Build for production:
-
-```powershell
-npm run build
-```
-
-4. Preview production build locally:
-
-```powershell
-npm run preview
-```
-
-5. Run linter (eslint):
-
-```powershell
-npm run lint
-```
-
 The available scripts come from `package.json`: `dev`, `build`, `preview`, `lint`.
 
 ## Project structure (important files)
