@@ -45,8 +45,6 @@ npm install
 npm run dev
 ```
 
-The available scripts come from `package.json`: `dev`, `build`, `preview`, `lint`.
-
 ## Project structure (important files)
 
 -    `index.html` — app entry
