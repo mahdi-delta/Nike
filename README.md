@@ -4,20 +4,18 @@ An example front-end project built with React and Vite, styled using TailwindCSS
 
 This README is written in English and covers setup, available scripts, the project structure, and a few styling notes relevant to this codebase.
 
+## 🔗 Live Demo
+
+**[View Live Project](https://mahdi-delta.github.io/Nike)**
+
 ## Preview
 
 ![My Skills](./src/assets/readmeImages/Nike1.png)
 ![My Skills](./src/assets/readmeImages/Nike2.png)
 ![My Skills](./src/assets/readmeImages/Nike3.png)
 
-## Key features
-
--    React + Vite for a fast development experience
--    TailwindCSS with a small set of custom utilities defined in
-`src/index.css`
--    Modular component structure: components live in `src/Components` and page sections in `src/sections`
-
 ---
+
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=react,tailwind,js,html,css,vite)
 
 ## Tech stack
@@ -97,4 +95,3 @@ src/
      -    Restart the Vite dev server after adding new custom utilities.
 
 -    If an asset (image/icon) doesn't load, verify the path under `src/assets` and how it's imported in components.
-

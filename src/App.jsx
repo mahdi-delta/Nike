@@ -12,20 +12,20 @@ import Subscribe from "./sections/Subscribe";
 import Footer from "./sections/Footer";
 
 const App = () => (
-     <main className="relative text-left">
+     <main className="relative text-left max-sm:text-start">
           <ScrollProgress />
           <BackToTop />
           <Nav />
-          <section className="xl:paddin-1 wide:padding-r padding-b">
+          <section className="xl:padding-l wide:padding-r padding-b">
                <Hero />
           </section>
-          <section className="xl:paddin-1 wide:padding-r padding-b">
+          <section className="xl:padding-l wide:padding-r padding-b">
                <PopularProducts />
           </section>
-          <section className="xl:paddin-1 wide:padding-r padding-b">
+          <section className="xl:padding-l wide:padding-r padding-b">
                <SuperQuality />
           </section>
-          <section className="xl:paddin-1 wide:padding-r padding-b">
+          <section className="xl:padding-l wide:padding-r padding-b">
                <Services />
           </section>
           <section className="padding">

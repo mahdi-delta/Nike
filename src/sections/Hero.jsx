@@ -17,16 +17,15 @@ const Hero = () => {
                className="w-full flex xl:flex-row flex-col
               justify-center min-h-screen gap-10 max-container"
           >
-               <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
-                    <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
+               <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28 max-sm:text-4xl max-sm:items-center">
+                    <p className="text-lg sm:text-xl font-montserrat text-coral-red">
+                         Our Summer Collection
+                    </p>
 
-                    <h1
-                         className="mt-10 font-palanquin text-8xl max-sm:text-[72px]
-                         max-sm:leading-[82] font-bold"
-                    >
+                    <h1 className="mt-10 font-palanquin text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight sm:leading-[82px]">
                          <span
                               className="xl:bg-white xl:whitespace-nowrap relative
-                              z-20 pr-10"
+                              z-10 pr-10"
                          >
                               The New Arrival
                          </span>
@@ -35,21 +34,21 @@ const Hero = () => {
                     </h1>
 
                     <p
-                         className="font-montserrat text-slate-gray text-lg
-                         leading-8 mt-6 mb-14 sm:max-w-sm"
+                         className="font-montserrat text-slate-gray text-base sm:text-lg
+                         leading-7 sm:leading-8 mt-6 mb-14 sm:max-w-sm"
                     >
                          Discover Stylish Nike arrivals, quality comfort, and innovation for your
                          active life.
                     </p>
                     <Button label="shop now" iconURl={arrowRight} />
 
-                    <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+                    <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-8 sm:gap-16">
                          {statistics.map((stat, index) => (
                               <div key={stat.label}>
-                                   <p className="text-4xl font-palanquin font-bold ">
+                                   <p className="text-2xl sm:text-3xl lg:text-4xl font-palanquin font-bold ">
                                         {stat.value}
                                    </p>
-                                   <p className="leading-7 font-montserrat text-slate-gray">
+                                   <p className="text-sm sm:text-base leading-7 font-montserrat text-slate-gray">
                                         {stat.label}
                                    </p>
                               </div>

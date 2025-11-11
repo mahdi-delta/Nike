@@ -11,11 +11,11 @@ const SpecialOffer = () => {
                          width={773}
                          height={687}
                          alt="image"
-                         className="object-contain w-full transition-all duration-700 hover:scale-105 hover:-rotate-2"
+                         className="object-contain w-full transition-all duration-700 hover:scale-105 hover:-rotate-2 max-sm:ml-4"
                     />
                </div>
-               <div className="flex flex-1 flex-col">
-                    <h2 className="mt-10 font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+               <div className="flex flex-1 flex-col ">
+                    <h2 className="mt-10 font-palanquin text-3xl sm:text-4xl capitalize font-bold lg:max-w-lg">
                          <span className="text-coral-red">Special </span>Offer
                     </h2>
 
@@ -31,7 +31,7 @@ const SpecialOffer = () => {
                          of exceptional.
                     </p>
 
-                    <div className="mt-11 flex flex-wrap gap-4">
+                    <div className="mt-11 flex flex-wrap gap-4 max-sm:flex max-sm:flex-col max-sm:items-center">
                          <Button label="shop now" iconURl={arrowRight} />
                          <Button
                               label="learn more"

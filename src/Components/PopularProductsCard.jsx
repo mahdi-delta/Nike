@@ -1,7 +1,7 @@
 import { star } from "../assets/icons";
 const PopularProductsCard = ({ imgURL, name, price }) => {
      return (
-          <div className="flex flex-1 flex-col w-full max-sm:w-full group cursor-pointer">
+          <div className="flex flex-1 flex-col w-full max-sm:w-full group cursor-pointer max-sm:flex max-sm:flex-col max-sm:items-center">
                <div className="overflow-hidden rounded-xl bg-gray-100 transition-all duration-300 group-hover:shadow-2xl">
                     <img
                          src={imgURL}
