@@ -8,8 +8,6 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const Hero = () => {
      const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
-     const heroTextRef = useScrollAnimation();
-     const heroImageRef = useScrollAnimation();
 
      return (
           <section
@@ -22,7 +20,7 @@ const Hero = () => {
                          Our Summer Collection
                     </p>
 
-                    <h1 className="mt-10 font-palanquin text-8xl maxlg:text-6xl max-md:text-4xl font-bold leading-tight sm:leading-[82px]">
+                    <h1 className="mt-10 font-palanquin text-8xl maxlg:text-6xl max-md:text-4xl font-bold leading-tight sm:leading-[110px]">
                          <span
                               className="xl:bg-white xl:whitespace-nowrap relative
                               z-10 pr-10"

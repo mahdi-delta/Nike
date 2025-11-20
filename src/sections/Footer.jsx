@@ -63,7 +63,8 @@ const Footer = () => {
                          <p>Copyright. All rights reserved</p>
                     </div>
                     <p className="font-montserrat cursor-pointer hover:text-coral-red transition-colors duration-300">
-                         Terms && Conditions
+                         This is a personal portfolio project for educational purposes. Not
+                         affiliated with Nike Inc.
                     </p>
                </div>
           </footer>
